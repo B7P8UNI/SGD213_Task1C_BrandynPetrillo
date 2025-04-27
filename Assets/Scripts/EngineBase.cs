@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EngineBase : MonoBehaviour
 {
+    // Was Going to Remove this but felt that if the individual wanted to make the engine base work you could move everything from the PlayerMovement to it if you felt like it.
     // acceleration indicates how fast the enemy accelerates
     [SerializeField]
     private float acceleration = 5000f;

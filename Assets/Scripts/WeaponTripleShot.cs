@@ -22,11 +22,11 @@ public class WeaponTripleShot : WeaponBase {
                 // Checks if the Bullets Tag is set to "Player" if so then Bullet moves up, if not moves down.
                 if (newBullet.tag == "Player")
                 {
-                    newBullet.GetComponent<MoveConstantly>().Direction = new Vector2(x + 0.5f * i, 0.5f);
+                    newBullet.GetComponent<PlayerMovement>().Direction = new Vector2(x + 0.5f * i, 0.5f);
                 }
                 else
                 {
-                    newBullet.GetComponent<MoveConstantly>().Direction = new Vector2(x + 0.5f * i, -0.5f);
+                    newBullet.GetComponent<PlayerMovement>().Direction = new Vector2(x + 0.5f * i, -0.5f);
                 }
             }
 
